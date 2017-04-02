@@ -2,11 +2,11 @@
 Target problem:
     min_{u, v}  || A*(uv') - B ||, 
 where, 
-    - All elements in matries A and B are posiotive
+    - All elements in the matries A and B are posiotive
     - u, v are column vectors
-    - '*' denotes Hadamard product (element-wise product)
-    - '|| ||' denotes Frobenius norm
-    - v' denots the transpose of v
+    - '*' denotes the Hadamard product (element-wise product)
+    - '|| ||' denotes the Frobenius norm
+    - v' denotes the transposed v
 
 Motivation:
     http://math.stackexchange.com/questions/2157191/approximating-a-given-matrix-with-a-rank-1-matrix-hadamard-product-with-another
