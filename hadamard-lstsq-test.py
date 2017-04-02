@@ -24,7 +24,7 @@ def hd(A, B):
     v = vt[0].reshape(-1,1)
     d = d[0]
     
-    r = np.trace((u@v.T * A) @ B.T) / np.trace((u@v.T*A) @ (u@v.T*A).T)
+    r = np.trace((u@v.T * A).T @ B) / np.trace((u@v.T*A).T @ (u@v.T*A))
     
     cost = lambda u_, v_: np.linalg.norm(u_ @ v_.T * A - B)**2
     res = cost(r*u, v)
